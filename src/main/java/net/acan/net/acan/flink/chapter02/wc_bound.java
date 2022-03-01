@@ -4,5 +4,6 @@ public class wc_bound {
     public static void main(String[] args) {
         System.out.println("acan");
         System.out.println("can");
+        System.out.println("a");
     }
 }
