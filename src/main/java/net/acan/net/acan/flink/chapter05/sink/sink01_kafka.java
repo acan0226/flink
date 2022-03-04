@@ -29,6 +29,7 @@ public class sink01_kafka {
                 new WaterSensor("sensor_2", 5L, 200)
         );
         Properties props = new Properties();
+        props.put("bootstrap.servers","hadoop162:9092,hadoop163:9092");
         stream.addSink(new FlinkKafkaProducer<WaterSensor>(
                 "aa",
                 new KafkaSerializationSchema<WaterSensor>() {
