@@ -57,6 +57,7 @@ public class State10_Kafka_Flink_Kafka {
         sourceProps.put("bootstrap.servers","hadoop162:9092,hadoop163:9092,hadoop164:9092");
         sourceProps.put("group.id","State10_Kafka_Flink_Kafka");
         sourceProps.put("auto.reset.offset","latest");
+        sourceProps.put("isolation.level", "read_committed");//读取提交的数据
 
 
         Properties  sinkProps = new Properties();
